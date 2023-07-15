@@ -8,7 +8,7 @@ Mónica Añez Hernández
 [Linkedin] https://www.linkedin.com/in/monicaanez/
 
 ## See live web
-https://monianez.github.io/landingpage-igualdad/
+https://monianez.github.io/gastrorigen/
 
 ## Instalation
 This project does not require installation. Just open the folder or double-click on the .html file
