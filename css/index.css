@@ -1,0 +1,689 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+li{ list-style: none; }
+
+h1 , h2 , h3 , h4 , h5 , p , strong{
+    font-size: inherit;
+    font-weight: inherit;
+}
+a{
+    display: block;
+    color:inherit;
+    text-decoration: none;
+}
+p a{
+    display: inline;
+}
+img , video {
+    display: block;
+    max-width: 100%;
+    width:100%;
+}
+svg{
+    display: block;
+    fill: currentColor;
+}
+form , input , textarea , label , button , fieldset , legend  , select {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color:inherit;
+    background-color: transparent;
+}
+
+:root{
+    font-size: 100%;
+    --color-brown: #594a42;
+    --color-middlebrown: #c19272;
+    --color-lightbrown: #cda88e;
+    --color-green: #bce269;
+    --color-white: white;
+    --font-titles:'Gibson', sans-serif;
+    --font-body:Georgia, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@import url(//db.onlinewebfonts.com/c/ad5566fd17858e1297ab7d5771601c5e?family=Gibson);
+@font-face {
+    font-family: "Gibson"; 
+    src: url("//db.onlinewebfonts.com/t/ad5566fd17858e1297ab7d5771601c5e.eot"); 
+    src: url("//db.onlinewebfonts.com/t/ad5566fd17858e1297ab7d5771601c5e.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/ad5566fd17858e1297ab7d5771601c5e.woff2") 
+    format("woff2"), 
+    url("//db.onlinewebfonts.com/t/ad5566fd17858e1297ab7d5771601c5e.woff") 
+    format("woff"), 
+    url("//db.onlinewebfonts.com/t/ad5566fd17858e1297ab7d5771601c5e.ttf") 
+    format("truetype"), 
+    url("//db.onlinewebfonts.com/t/ad5566fd17858e1297ab7d5771601c5e.svg#Gibson") 
+    format("svg");
+}
+
+/*--------------- Font ---------------*/
+
+h1 {}
+
+h2 {
+    font-family: Gibson, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--color-white);
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+h4 {
+    font-family: Gibson, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    color: var(--color-white);
+}
+
+h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size: 1.25rem;
+    color: var(--color-white);
+}
+
+h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size: 1.25rem;
+    color: var(--color-white);
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+
+/*--------------- Header ---------------*/
+
+Header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    padding: .625rem;
+
+    position: fixed;
+    z-index: 2;
+}
+
+.Header-nav {
+    width: 100%;
+        
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header-wrapperuno {
+    width: 50%;
+        
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.Header-btn {
+    width: 1.875rem;
+    cursor: pointer;
+}
+
+.Header-menu {}
+
+.Header-search {
+    width: 50%;
+    background-color: var(--color-white);
+    padding: 5px;
+}
+
+.Header-box {
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.Header-lupa {
+    width: 1.875rem;
+}
+
+.Header-wrapperdos {
+    width: 50%;
+    
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.875rem;
+}
+.Header-icono {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header-img {
+    width: 1.875rem;
+}
+
+.Header-h5 {
+    color: var(--color-brown);
+}
+
+@media (max-width: 700px) {
+    .Header-wrapperdos {
+        display: none;
+    }
+
+    .Header-search {
+        width: 100%;
+    }
+}
+
+/*--------------- Hero ---------------*/
+
+.Hero {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(../assets/imagen_fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero-wrapper{
+    width: 50%;
+}
+
+.Hero-logo {
+    width: 80%;
+    margin: 0 auto 1.25rem;
+}
+
+.Hero-h3 {
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 970px) {
+    .Hero-wrapper{
+        width: 70%;
+    }
+    .Hero-logo {
+        width: 100%;
+    }
+}
+
+/*--------------- Secciones ---------------*/
+
+.Secciones {
+    width: 100%;
+    background-color: var(--color-middlebrown);
+
+    padding: 3.125rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.Secciones-a {
+    width: 15%;
+}
+
+.Secciones-h4 {
+    text-align: center;
+    padding: 1.25rem 0 1.25rem;
+    border: 3px solid var(--color-white);
+}
+
+.Secciones-h4:hover {
+    background-color: var(--color-white);
+    color: var(--color-middlebrown);
+}
+
+@media (max-width: 970px) {
+    .Secciones {
+        flex-direction: column;
+    }
+
+    .Secciones-a {
+        width: 50%;
+    }
+}
+
+/*--------------- Top ventas ---------------*/
+
+.Topventas {
+    width: 100%;
+    background-color: #cda88e;
+    margin: auto;
+    padding: 3.125rem 0;
+}
+
+.Topventas-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Topventas-h2 {
+    text-align: center;
+    margin: 0 auto 3.125rem;
+    border-bottom: 4px solid var(--color-green);
+    display: inline-flex;
+}
+
+.Topventas-wrapperuno {  
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6.25rem;
+
+    padding: 0 0 3.125rem ;
+}
+
+.Topventas-wrapperdos {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.Topventas-h6 {}
+
+.Topventas-img {
+    height: 9.375rem;
+}
+
+.Topventas-img:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+.Topventas-img:active {
+    transform: scale(1.3);
+}
+
+.Topventas-h5 {
+    font-family: var(--font-titles);
+    background-color: var(--color-green);
+    padding: 5px;
+}
+
+@media (max-width: 970px) {
+    .Topventas-wrapperuno {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*--------------- Origen ---------------*/
+
+.Origen {
+    width: 100%;
+    background-color: var(--color-middlebrown);
+
+    padding: 3.125rem;
+}
+
+.Origen-wrapper {
+    width: 70%;
+
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.875rem;
+}
+
+.Origen-h2 {
+    margin: 0 auto 3.125rem;
+    border-bottom: 4px solid var(--color-green);
+    display: inline-flex;
+}
+
+.Origen-p {
+}
+
+.Origen-mapa {
+    width: 50%;
+}
+
+@media (max-width: 970px) {
+    .Origen-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Origen-mapa {
+        width: 100%;
+    }
+}
+
+/*--------------- Tierra ---------------*/
+
+.Tierra {
+    width: 100%;
+    background-color: var(--color-lightbrown);
+
+    padding: 3.125rem;
+}
+
+.Tierra-wrapper {
+    width: 80%;
+    margin: auto;
+
+    position: relative;
+}
+
+.Tierra-video {
+    width: 100%;
+}
+
+.Tierra-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tierra-h2 {
+    text-align: center;
+    margin-bottom: 1.875rem;
+    border-bottom: 4px solid var(--color-green);
+    display: inline-flex;
+}
+
+
+/*--------------- Clientes ---------------*/
+
+.Clientes {
+    width: 100%;
+    background-color: var(--color-middlebrown);
+    padding: 3.125rem 0;
+}
+
+.Clientes-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Clientes-h2 {
+    text-align: center;
+    margin-bottom: 3.125rem;
+    border-bottom: 4px solid var(--color-green);
+    display: inline-flex;
+}
+
+.Clientes-wrapperuno {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.875rem;
+
+}
+
+.Clientes-wrapperdos {
+    width: 30%;
+    position: relative;
+}
+
+.Clientes-img {
+    width: 100%;
+    height: 21.875rem;
+    background-image: url(../assets/imagen_mama_campo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Clientes-logo {
+    width: 6.25rem;
+
+    position: absolute;
+    bottom: .625rem;
+    right: .625rem;
+}
+
+.Clientes-wrappertres {
+    margin-bottom: 1.875rem;
+}
+
+.Clientes-citas {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+
+    margin-bottom: 1.875rem;
+}
+
+.Clientes-foto {
+    width: 100px;
+}
+
+.Clientes-p {}
+
+@media (max-width: 970px) {
+    .Clientes-wrapperuno {
+        flex-direction: column;
+    }
+
+    .Clientes-wrapperdos {
+        width: 100%;
+        order: 2;
+    }
+
+    .Clientes-img {
+        height: 12.5rem;
+    }
+
+    .Clientes-citas {
+        margin-bottom: 0;
+    }
+}
+
+/*--------------- Acciones  ---------------*/
+
+.Acciones {
+    width: 100%;
+    background-color: var(--color-lightbrown);
+
+    padding: 3.125rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.Acciones-a {
+    width: 15%;
+}
+
+.Acciones-h4 {
+    text-align: center;
+    padding: 1.25rem 0 1.25rem;
+    border: 3px solid var(--color-white);
+}
+
+.Acciones-h4:hover {
+    background-color: var(--color-white);
+    color: var(--color-middlebrown);
+}
+
+@media (max-width: 970px) {
+    .Acciones {
+        flex-direction: column;
+    }
+
+    .Acciones-a {
+        width: 50%;
+    }
+}
+
+/*--------------- Footer ---------------*/
+
+.Footer {
+    width: 100%;
+    background-color: var(--color-middlebrown);
+}
+
+.Footer-wrapperuno {
+    width: 80%;
+    margin: auto;
+    padding: 3.125rem;
+}
+
+.Footer-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Footer-h2 {
+    margin-bottom: 1.875rem;
+    border-bottom: 4px solid var(--color-green);
+    display: inline-flex;
+}
+
+.Footer-wrapperdos {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer-wrappertres {
+    width: calc( 80% / 3 );
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.Footer-img {
+    width: 40px;
+    height: 40px;
+}
+
+.Footer-p {}
+
+.Footer-social {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 1.875rem;
+}
+
+.Footer-socialwrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.Footer-icon {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+}
+
+.Flechaup {
+    width: 3.5rem;
+    padding: 0.2rem;
+    background-color: var(--color-green);
+
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+}
+
+.Flechaup-svg {
+
+    fill: var(--color-white);
+    color: var(--color-white);
+}
+
+@media (max-width: 970px) {
+
+    .Footer-titulo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Footer-h2 {
+        text-align: center;
+    }
+
+    .Footer-wrapperdos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.875rem;
+    }
+
+    .Footer-wrappertres {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Footer-socialwrapper {
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+}
